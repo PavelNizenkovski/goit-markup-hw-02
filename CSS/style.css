@@ -4,6 +4,7 @@
   --accent-color: #2196f3;
   --footer-hero-color: #2f303a;
   --primary-bg-color: #fff;
+  --second-bg-color: #f5f4fa;
   --text-footer-color: rgba(255, 255, 255, 0.6);
 }
 
@@ -14,13 +15,6 @@ body {
   letter-spacing: 0.03em;
 }
 
-/*цвет текст гавигация и заголовки #212121 */
-/*цвет абзацев #757575 */
-/* цвет текста в футере *rgba(255, 255, 255, 0.6);*/
-/* Синий цвет акцент #2196F3*/
-/* Вторичный цвет фона #F5F4FA*/
-/* фон футера и героя #2F303A*/
-
 .list {
   list-style: none;
 }
@@ -30,6 +24,7 @@ body {
   font-family: raleway, sans-serif;
   font-size: 26px;
   line-height: 1.2;
+  text-decoration: none;
 }
 .logo-web {
   color: #2196f3;
@@ -46,6 +41,7 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  text-decoration: none;
 }
 
 .auth-nav .link {
@@ -54,6 +50,7 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  text-decoration: none;
 }
 
 .site-nav .link.current,
@@ -95,6 +92,10 @@ body {
 }
 
 /*team*/
+.team {
+  background-color: var(--second-bg-color);
+}
+
 .team-title {
   font-size: 36px;
   line-height: 1.16;
@@ -121,24 +122,31 @@ body {
 
 .footer-address {
   color: var(--primary-bg-color);
-  font-size: 14px;
-  line-height: 1.71;
-}
-
-.footer-contakts {
-  color: var(--text-footer-color);
+  font-style: normal;
   font-size: 14px;
   line-height: 1.71;
 }
 
 .footer .contakts {
   color: var(--text-footer-color);
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  text-decoration: none;
+}
+
+.footer-address:hover,
+.footer-address:focus,
+.contakts:hover,
+.contakts:focus {
+  color: #2196f3;
 }
 
 /*button*/
 
 .button {
   font-family: inherit;
+  cursor: pointer;
 }
 
 .button.primary {
@@ -151,4 +159,29 @@ body {
 }
 .button.secondary {
   color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  letter-spacing: 0.03em;
+}
+
+.secondary:hover,
+.secondary:focus {
+  background-color: var(--accent-color);
+  color: var(--primary-bg-color);
+}
+
+/*portfolio*/
+
+.cases .title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.cases .paragraph {
+  color: var(--paragraph-text-color);
+  font-size: 16px;
+  line-height: 1.88;
 }
